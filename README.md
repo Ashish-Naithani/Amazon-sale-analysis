@@ -70,14 +70,7 @@ Python was used for data preprocessing to ensure clean and analysis-ready data.
 - Used Date table columns for all time-based visuals
 - Avoided auto date hierarchy for accurate time intelligence
 
----
-
-## 📊 DAX Measures Used
-
-### 📅 Date Table
-```DAX
-Date =
-ADDCOLUMNS (
+-----
     CALENDAR (
         MIN ( 'Amazon Sale Report'[Date] ),
         MAX ( 'Amazon Sale Report'[Date] )
